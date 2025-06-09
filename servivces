@@ -1,0 +1,14 @@
+import React from "react";
+
+export default function Services() {
+  return (
+    <section style={{ padding: "2rem" }}>
+      <h2>Nos services</h2>
+      <ul>
+        <li>Révision complète – 200 dh</li>
+        <li>Nettoyage – 80 dh</li>
+        <li>Réparation de freins – 120 dh</li>
+      </ul>
+    </section>
+  );
+}
