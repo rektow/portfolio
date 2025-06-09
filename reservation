@@ -1,0 +1,34 @@
+import React, { useState } from "react";
+
+export default function Reservation() {
+  const [service, setService] = useState("Révision complète");
+  const [date, setDate] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert(`Rendez-vous confirmé pour le ${date} – ${service}`);
+  };
+
+  return (
+    <section style={{ padding: "2rem" }}>
+      <h2>Réserver un service</h2>
+      <form onSubmit={handleSubmit}>
+        <label>
+          Service&nbsp;
+          <select value={service} onChange={(e) => setService(e.target.value)}>
+            <option>Révision complète</option>
+            <option>Nettoyage</option>
+            <option>Réparation de freins</option>
+          </select>
+        </label>
+        <br /><br />
+        <label>
+          Date&nbsp;
+          <input type="date" value={date} onChange={(e) => setDate(e.target.value)} required />
+        </label>
+        <br /><br />
+        <button type="submit">Confirmer</button>
+      </form>
+    </section>
+  );
+}
