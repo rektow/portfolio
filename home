@@ -1,0 +1,17 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
+export default function Home() {
+  return (
+    <main style={{ padding: "2rem", textAlign: "center" }}>
+      <h1>SaniBike</h1>
+      <p>Horaires : Lun – Ven, 8h – 18h</p>
+      <p>Adresse : 123, rue du Vélodrome, Casablanca</p>
+      <Link to="/reservation">
+        <button>Prendre rendez-vous</button>
+      </Link>
+      <br /><br />
+      <Link to="/services">Voir nos services</Link>
+    </main>
+  );
+}
