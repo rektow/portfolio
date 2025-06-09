@@ -1,0 +1,9 @@
+import React from "react";
+
+export default function Footer() {
+  return (
+    <footer style={{ marginTop: "4rem", padding: "1rem", textAlign: "center", borderTop: "1px solid #ddd" }}>
+      <small>Conçu par Mbareche Omar – Devoir 2 SEG3525</small>
+    </footer>
+  );
+}
